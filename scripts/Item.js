@@ -23,20 +23,4 @@ const Item = (function () {
 
 }());
 
-// function validateName(name){
-//     $('.js-shopping-list-entry').submit(function(event){
-//         if($(this).val() === ''){
-//             throw new TypeError("Name does not exist"):
-//         }
-//     }
-// }
 
-// function create(name){
-//     return {
-//         id: cuid(),
-//         name: name,
-//         checked: false
-//     }
-    
-
-// }
