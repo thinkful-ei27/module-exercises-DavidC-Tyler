@@ -134,9 +134,9 @@ const shoppingList = (function(){
     $('.js-shopping-list').on('submit', '.js-edit-item', event => {
       event.preventDefault();
       const id = getItemIdFromElement(event.currentTarget);
-      // const itemName = $(event.currentTarget).find('.shopping-item').val();
+      const itemName = $(event.currentTarget).find('.shopping-item').val();
       // editListItemName(id, itemName);
-      store.findAndUpdateName(id);
+      store.findAndUpdateName(id, itemName);
       render();
     });
   }
