@@ -54,8 +54,9 @@ const store = (function () {
 //   (HINT: You can use array method .filter() or a combination of .findIndex() and .splice().)
 
   const findAndDelete = function(id){
-    const index = store.items.findIndex(item => item.id === id);
-    store.items.splice(index, 1);
+    const index = this.items.findIndex(item => item.id === id);
+    console.log(index);
+    this.items.splice(index, 1);
   };
 
 
